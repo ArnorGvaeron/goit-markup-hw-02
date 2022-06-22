@@ -5,31 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#">WebStudio </a>
-        <ul>
-          <li><a href="Студия">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="Контакты">Контакты</a></li>
+        <nav>
+            <a href="#" class="logo">WebStudio </a>
+            <ul class="nav-list">
+                <li><a href="Студия" class="nav-link">Студия</a></li>
+                <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+                <li><a href="Контакты" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="contact-list">
+            <li><a href="mailto:info@devstudio.com" class="contact-item">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="contact-item">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
     </header>
     <main>
         <h1>Наши проекты</h1>
         <nav>
             <ul>
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайты</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
+                <li><button type="button" class="filter-btn">Все</button></li>
+                <li><button type="button" class="filter-btn">Веб-сайты</button></li>
+                <li><button type="button" class="filter-btn">Приложения</button></li>
+                <li><button type="button" class="filter-btn">Дизайн</button></li>
+                <li><button type="button" class="filter-btn">Маркетинг</button></li>
             </ul>
         </nav>
         <ul>
