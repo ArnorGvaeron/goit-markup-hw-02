@@ -2,7 +2,11 @@
     --primary-color: #212121;
     --secondary-color: #757575;
     --accent-color: #2196F3;
+    --address-color: rgba(255, 255, 255, 0.6);
     --common-white: #ffffff;
+    --background:#F5F4FA;
+    --secondary-backgroung:#2F303A;
+    --common-black: #000;
     --main-font: 'Roboto', sans-serif;
     --title-size: 36px;
     --text-size: 14px;
@@ -10,6 +14,9 @@
 body{
     font-family: var(--main-font);
     color: var(--primary-color);
+    font-size: var(--text-size);
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 .list{
     list-style: none;
@@ -19,51 +26,58 @@ body{
     background-color: var(--common-white);        
 }
 .logo{
-    color: #000000;
+    color: var(--common-black);
     text-decoration: none;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19; 
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 .logo-first-word{
     color: var(--accent-color);}
 .nav{    
-    font-size: var(--text-size);
     font-weight: 500;
-    line-height: 1.14;     
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-list .current{
+    color: var(--accent-color);
 }
 .nav-link{
     color: var(--primary-color);
     text-decoration: none;    
 }
 .contact-list{    
-    font-size: var(--text-size);
     font-weight: 500;   
 }
-.nav-link:hover, .nav-link:focus, .nav-link:active{
-   color: #2196F3; 
+.nav-link:hover, .nav-link:focus{
+   color: var(--accent-color); 
 }
 .contact-link{
     color: var(--secondary-color);
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 .contact-link:hover, .contact-link:focus{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 /* hero */
 .hero{
-    background-color: #2F303A;
-    color: var(--common-white);    
+    background-color: var(--secondary-backgroung);       
+}
+.hero-title{    
     font-size: 44px;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 1.36;   
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--common-white);    
 }
 .hero-btn{
-    color: #ffffff;
-    background-color: #2196F3;
+    color: var(--common-white);
+    background-color: var(--accent-color);
     border: none;
     border-radius: 4px;
     padding: 10px 30px;
@@ -71,19 +85,18 @@ body{
     font-size: 16px;
     font-weight: 700;
     line-height: 1.9;
+    letter-spacing: 0.06em;
     cursor: pointer;
 }
 /* section advantage */
 .advantage-item{
-    text-transform: uppercase;
-    font-size: var(--text-size); 
-    line-height: 1.14;       
+    text-transform: uppercase;    
+    line-height: 1.14;
+    font-size: var(--text-size);
 }
 .advantage p{
-    color: var(--secondary-color);
-    font-size: var(--text-size);
-    font-weight: 400;
-    line-height: 1.71;
+    color: var(--secondary-color);    
+    line-height: 1.71;   
 }
 .section-title{    
     font-size: var(--title-size);
@@ -91,12 +104,11 @@ body{
 }
 /* section card */
 .card{    
-    background-color: #F5F4FA;   
+    background-color: var(--background);       
 }
 .card-skill{
     color: var(--secondary-color);    
-    font-size: 16px;   
-    font-weight: 400;
+    font-size: 16px;    
     line-height: 1.19; 
 }
 .card-name{
@@ -106,29 +118,27 @@ body{
 }
 /* footer */
 .footer{
-    background-color: #2F303A;
+    background-color: var(--secondary-backgroung);
 }
 .logo-second-word{
-    color: #ffffff;
+    color: var(--common-white);
 }
 .address a{    
-    font-style: normal;
-    font-size: var(--text-size);
-    font-weight: 400;
+    font-style: normal;    
     line-height: 1.71;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-color);
 }
 .address .address-link{
-    color: #ffffff;
+    color: var(--common-white);
 }
 .address-link:hover, .address-link:focus{
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* Styles for Portfolio */
 .filter-btn{    
-    background-color: #F5F4FA;
+    background-color: var(--background);
     border: none;
     border-radius: 4px;
     padding: 6px 22px;
@@ -139,15 +149,20 @@ body{
     cursor: pointer;
 }
 .filter-btn:hover, .filter-btn:focus{
-    color: #F5F4FA;
-    background-color: #2196F3;
+    color: var(--background);
+    background-color: var(--accent-color);
    }
    .project h2{
     font-size: 18px; 
-    line-height: 2;   
+    font-weight: 700;
+    line-height: 2;     
+    color: var(--primary-color);
    }
-   .project p{
-    font-size: var(--text-size);
-    font-weight: 400;
+   .project p{    
+    font-size: 16px;    
     line-height: 1.9;
+    color: var(--secondary-color);
+   }
+   .project a{
+    text-decoration: none;
    }
