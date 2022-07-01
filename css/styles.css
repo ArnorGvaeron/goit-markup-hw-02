@@ -216,10 +216,10 @@ body {
 }
 
 /* Styles for Portfolio */
-.filter-list{
-    display: flex;
-    padding: 94px 495px 34px;
-    margin: 0;    
+.filter-list {
+  display: flex;
+  padding: 94px 495px 34px;
+  margin: 0;
 }
 .filter-btn {
   background-color: var(--background);
@@ -238,8 +238,17 @@ body {
   color: var(--background);
   background-color: var(--accent-color);
 }
-.project{
-    padding: 0;
+.project {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 34px 205px 94px;
+  justify-content: space-around;
+}
+.project-item {
+  border: 1px solid #eeeeee;
+  margin: 13px;
 }
 .project h2 {
   font-size: 18px;
@@ -255,13 +264,9 @@ body {
   padding-left: 24px;
 }
 .project a {
-  text-decoration: none;  
+  text-decoration: none;
 }
-.first-row, .second-row, .third-row{
-  display: flex;
-  padding: 0px 215px 30px;
-}
-.project-item {
-  border: 1px solid #EEEEEE;
-  margin-right: 30px;  
-}
+
+
+
+
